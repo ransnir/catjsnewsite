@@ -1,0 +1,92 @@
+@installBackground : #5694d0;
+@maxNpmIconsSize : 75px;
+@maxGitIconsSize : 40px;
+
+#install {
+  background-color: @installBackground;
+  text-align: center;
+  padding-top: 50px;
+
+    .commands {
+      font-size: 20px;
+    }
+
+
+  #commandLine {
+    color: #ffffff;
+    padding: 15px 30px;
+    background: #000000;
+    font-family: monospace, serif;
+  }
+
+
+
+  #aboutInstall {
+    padding-top: 50px;
+    display : table;
+    width: 100%;
+
+    #aboutInstallTitle {
+      font-size: 35px;
+      margin-bottom: 15px;
+      padding-bottom: 20px;
+
+    }
+
+    .aboutInstallContent {
+      display : table-cell;
+      width: 50%;
+
+      span {
+        display: block;
+      }
+    }
+
+    #version {
+      padding-left: 20px;
+
+
+      #npmgitLinks {
+        font-size: 25px;
+        padding: 10px 0;
+        #npmLink {
+          padding-right: 20px;
+
+          img {
+
+              max-width: @maxNpmIconsSize;
+              max-height: @maxNpmIconsSize;
+
+          }
+        }
+        #gitLink {
+          padding-left: 20px;
+
+          img {
+
+            max-width: @maxGitIconsSize;
+            max-height: @maxGitIconsSize;
+
+          }
+        }
+
+      }
+    }
+
+    #firstExample{
+      padding-right: 20px;
+      text-align: left;
+      padding-left: 50px;
+
+      #firstCommands {
+
+        padding: 20px;
+        background: #000000;
+        color : #ffffff;
+        font-family: monospace, serif;
+
+      }
+    }
+  }
+
+}
