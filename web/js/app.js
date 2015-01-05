@@ -8,7 +8,7 @@ define(['angular'], function (angular) {
     
 	var app;
 
-    app = angular.module('jqueryspa', ['ngRoute', 'ngMap', 'ui.bootstrap'], function() {
+    app = angular.module('jqueryspa', ['ngRoute', 'ui.bootstrap'], function() {
         // module was loaded
        
     });
