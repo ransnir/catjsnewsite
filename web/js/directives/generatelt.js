@@ -24,7 +24,8 @@ define(['app'], function (app) {
                 var attrnames = attrs.$attr,
                     tagName = "div",
                     template = [],
-                    out, key, item, prop;
+                    out, key, item, prop,
+                    index = 0;
 
                 if (attrnames) {
                     for (key in attrnames) {
@@ -50,7 +51,13 @@ define(['app'], function (app) {
                                     } else {
                                         scope[prop.attr] = attrs[item];
                                         template.push([" ", prop.attr, '="', attrs[item], '"'].join(""));
+
                                     }
+
+                                    if (index > 1) {
+                                        template.push([" ", "class", '="', "notMain", '"'].join(""));
+                                    }
+
                                 }
 
                             } else {

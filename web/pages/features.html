@@ -1,0 +1,30 @@
+
+
+
+<section ng-repeat="feature in featurectnt">
+
+    <div ng-class="{odd: ($index % 2 !== 0), pair: ($index % 2 === 0)}"  >
+
+        <div class="featureHeader">
+
+            <h2 class="sideDiv">{{feature.name}} </h2>
+
+        </div>
+    </div>
+
+
+
+    <div ng-class="{odd: ($index % 2 !== 0), pair: ($index % 2 === 0)}" >
+
+        <p class="sideDiv text"> {{feature.Value}} </p>
+
+        <!--   <div class="sideDiv text" >
+
+                    <p> {{feature.Value}} </p>
+                </div>-->
+        <div class="sideDiv" ><img src={{feature.img}}   ></div>
+
+    </div>
+
+</section>
+
