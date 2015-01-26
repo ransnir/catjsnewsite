@@ -25,11 +25,15 @@ angular.module('ngScrollTo')
         return {
             restrict : "AC",
             compile : function(){
-
                 return function(scope, element, attr) {
                     element.bind("click", function(event){
-                        //ScrollTo.idOrName(attr.scrollTo, attr.offset);
-                        ScrollTo.idOrName(attr.scrollTo,1000);
+                        debugger ;
+
+                       // ScrollTo.idOrName(attr.scrollTo, attr.offset);
+                         //for testing
+
+                        ScrollTo.idOrName(attr.scrollTo,100);
+
                     });
                 };
             }
@@ -38,7 +42,6 @@ angular.module('ngScrollTo')
     .service('ScrollTo', ['$window', 'ngScrollToOptions', function($window, ngScrollToOptions) {
 
         this.idOrName = function (idOrName, offset, focus) {//find element with the given id or name and scroll to the first element it finds
-            debugger;
             var document = $window.document;
 
             if(!idOrName) {//move to top if idOrName is not provided
@@ -79,6 +82,8 @@ angular.module('ngScrollTo')
     .provider("ngScrollToOptions", function() {
         this.options = {
             handler : function(el, offset) {
+                debugger ;
+
                 if (offset) {
                     var top = $(el).offset().top - offset;
 
