@@ -1,36 +1,35 @@
-@footerBackground : #283a44;
-@footerFontColor :  #fff;
 
-#footer {
-  background-color: @footerBackground;
+.footer {
+  background-color: #34495e;
 
+  width: 100%;
+  height: 75px;
+  float:right;
+  position:relative;
+  text-align:left;
 
-  #footerList {
+    ul{
+      list-style:none;
+      position:relative;
+      left:35%;
 
+    li {
+      display: inline-block;
+      align-items: center;
+      padding: 17px;
 
+        a img {
+          width: 35px;
+          height: 35px;
+        }
 
-    li{
-      color: @footerFontColor;
-      font-size: 25px;
-
-     a {
-        color: @footerFontColor;
-      }
-      #facebook {
-        background-position: -320px -85px;
-      }
-
-      .footerIcons {
-        display: block;
-        width: 25px;
-        height: 25px;
-        background-image: url('/css/images/sprite.png');
-        margin: 0 auto;
-      }
-
-      #twitter {
-        background-position: -350px -85px;
       }
     }
   }
-}
+
+
+
+
+
+
+

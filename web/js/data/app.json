@@ -1,42 +1,22 @@
 [
     {
-        "name": "panel",
-        "display-name": "Panel",
-        "template-url": "pages/panel.html",
-        "type": "section",
-        "active": false
-    },
-    {
         "name": "main",
         "display-name": "Main",
         "template-url": "pages/main.html",
         "type": "section",
         "active": false
     },
+
     {
-        "name": "install",
-        "display-name": "Install",
-        "template-url": "pages/install.html",
-        "type": "section",
-        "active": false
-    },
-    {
-        "name": "about",
-        "display-name": "about",
-        "template-url": "pages/about.html",
-        "type": "section",
-        "active": false
-    },
-    {
-        "name": "gettingstarted",
-        "display-name": "Getting Started",
-        "template-url": "pages/gettingstarted.html",
+        "name": "features",
+        "display-name": "Features",
+        "template-url": "pages/features.html",
         "type": "section",
         "active": false
     },
     {
         "name": "footer",
-        "display-name": "Fotter",
+        "display-name": "footer",
         "template-url": "pages/footer.html",
         "type": "section",
         "active": false

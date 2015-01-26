@@ -30,7 +30,7 @@
   src: url('fonts/hpsimplified-light-eot.eot');
   src: url('fonts/hpsimplified-light-eot.eot?#iefix') format('embedded-opentype'), url('fonts/hpsimplified-light-woff.woff') format('woff'), url('fonts/hpsimplified-light-ttf.ttf') format('truetype');
 }
-/* line 42, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/base.less */
+/* line 42, c:\Program Files\nodejs\catjsnewsite\web\css\less\base.less */
 HTML,
 BODY {
   margin: 0;
@@ -41,36 +41,288 @@ BODY {
   font-size: 16px;
   color: #000000;
 }
-/* line 3, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/main.less */
+/* line 4, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
 #main {
-  background-color: #ffffff;
+  width: 100%;
 }
-/* line 6, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/main.less */
+/* line 11, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.arrow-wrap {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 19cm;
+  margin-left: -5em;
+  background: #62819c;
+  width: 10em;
+  height: 10em;
+  padding: 4em 2em;
+  border-radius: 50%;
+  font-size: 0.5em;
+  display: block;
+}
+/* line 26, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.arrow {
+  float: left;
+  position: relative;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #ffffff transparent transparent transparent;
+  -webkit-transform: rotate(360deg);
+}
+/* line 37, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.arrow:after {
+  content: '';
+  position: absolute;
+  top: -3.2em;
+  left: -3em;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: #111 transparent transparent transparent;
+  -webkit-transform: rotate(360deg);
+}
+/* line 54, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* line 62, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.wrap {
+  width: 100%;
+  max-width: 900px;
+  margin: 4em auto;
+  font-family: Raleway, Arial, sans-serif;
+  padding: 1em 2em;
+}
+/* line 70, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #eee;
+  margin: 2em 0;
+  padding: 0;
+}
+/* line 79, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+h1,
+h2 {
+  margin-bottom: 1em;
+  border-bottom: 2px solid #eee;
+  line-height: 1.5;
+}
+/* line 85, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+h1 > small {
+  color: #666;
+}
+/* line 89, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+h1 > small > a,
+p > a {
+  color: #3CB371;
+  text-decoration: none;
+}
+/* line 94, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+h1 > small > a:hover,
+p > a:hover {
+  text-decoration: underline;
+}
+/* Buttons styles */
+/* line 100, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/* line 106, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+input[type="submit"].btn,
+button.btn {
+  cursor: pointer;
+}
+/* line 111, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+a.btn,
+.btn {
+  margin-right: 1em;
+  /* remove this while use*/
+  margin-bottom: 1em;
+  /* remove this while use*/
+  display: inline-block;
+  outline: none;
+  *zoom: 1;
+  text-align: center;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 300;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  border: 1px solid;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.01);
+}
+/* Radius */
+/* line 129, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.btn-radius {
+  border-radius: 3px;
+}
+/* Sizes */
+/* line 133, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.btn-small {
+  font-size: 0.8125em;
+  padding: 0.4125em 1.25em;
+}
+/* line 137, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.btn-medium {
+  font-size: 0.9375em;
+  padding: 0.5375em 1.375em;
+}
+/* line 141, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.btn-large {
+  font-size: 1.0625em;
+  padding: 0.5625em 1.5em;
+}
+/* Colors */
+/* line 148, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.btn-white {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+/* line 152, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.btn-white:hover {
+  background: #ffffff;
+  color: #fff;
+  border-color: #ffffff;
+}
+/* line 158, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.btn-green {
+  color: #3CB371;
+  border-color: #3CB371;
+}
+/* line 162, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.btn-green:hover {
+  background: #3CB371;
+  color: #fff;
+  border-color: #3CB371;
+}
+/* line 168, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.btn-blue {
+  color: #4682B4;
+  border-color: #4682B4;
+}
+/* line 172, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.btn-blue:hover {
+  background: #4682B4;
+  color: #fff;
+  border-color: #4682B4;
+}
+/* line 178, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.btn-orange {
+  color: #FF8C00;
+  border-color: #FF8C00;
+}
+/* line 182, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.btn-orange:hover {
+  background: #FF8C00;
+  color: #fff;
+  border-color: #FF8C00;
+}
+/* line 188, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.btn-red {
+  color: #B22222;
+  border-color: #B22222;
+}
+/* line 192, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.btn-red:hover {
+  background: #B22222;
+  color: #fff;
+  border-color: #B22222;
+}
+/* line 198, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.btn-gray {
+  color: #808080;
+  border-color: #808080;
+}
+/* line 202, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+.btn-gray:hover {
+  background: #808080;
+  color: #fff;
+  border-color: #808080;
+}
+/* line 214, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+#main {
+  background-color: '#5694d0';
+  /*
+  height: 780px;
+*/
+}
+/* line 225, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+#main #btn .button-link {
+  padding: 10px 15px;
+  background: #4479BA;
+  color: #FFF;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: solid 1px #20538D;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* line 245, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+#main #btn .button-link:hover {
+  background: #356094;
+  border: solid 1px #2A4E77;
+  text-decoration: none;
+}
+/* line 250, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
+#main #btn .button-link:active {
+  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  background: #2E5481;
+  border: solid 1px #203E5F;
+}
+/* line 260, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
 #main #titleContentWrapper {
   display: inline-block;
+  color: #FFFFFF;
 }
-/* line 10, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/main.less */
+/* line 264, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
 #main #titleContentWrapper #catTitleIcon {
   float: left;
   padding-right: 30px;
   max-width: 40%;
 }
-/* line 19, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/main.less */
+/* line 273, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\main.less */
 #main #titleContentWrapper #titleText #catTitle {
   font-size: 50px;
 }
-/* line 5, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/about.less */
+/* line 5, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\about.less */
 #about {
   background-color: #ffffff;
 }
-/* line 12, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/about.less */
+/* line 12, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\about.less */
 #about #aboutContentWrapper #aboutCatList {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-align: center;
 }
-/* line 18, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/about.less */
+/* line 18, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\about.less */
 #about #aboutContentWrapper #aboutCatList li {
   display: inline-table;
   list-style-type: none;
@@ -78,167 +330,233 @@ BODY {
   max-width: 200px;
   min-width: 200px;
 }
-/* line 25, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/about.less */
+/* line 25, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\about.less */
 #about #aboutContentWrapper #aboutCatList li p {
   font-size: 18px;
 }
-/* line 5, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/install.less */
+/* line 5, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\install.less */
 #install {
   background-color: #5694d0;
   text-align: center;
   padding-top: 50px;
 }
-/* line 10, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/install.less */
+/* line 10, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\install.less */
 #install .commands {
   font-size: 20px;
 }
-/* line 15, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/install.less */
+/* line 15, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\install.less */
 #install #commandLine {
   color: #ffffff;
   padding: 15px 30px;
   background: #000000;
   font-family: monospace, serif;
 }
-/* line 24, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/install.less */
+/* line 24, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\install.less */
 #install #aboutInstall {
   padding-top: 50px;
   display: table;
   width: 100%;
 }
-/* line 29, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/install.less */
+/* line 29, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\install.less */
 #install #aboutInstall #aboutInstallTitle {
   font-size: 35px;
   margin-bottom: 15px;
   padding-bottom: 20px;
 }
-/* line 36, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/install.less */
+/* line 36, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\install.less */
 #install #aboutInstall .aboutInstallContent {
   display: table-cell;
   width: 50%;
 }
-/* line 40, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/install.less */
+/* line 40, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\install.less */
 #install #aboutInstall .aboutInstallContent span {
   display: block;
 }
-/* line 45, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/install.less */
+/* line 45, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\install.less */
 #install #aboutInstall #version {
   padding-left: 20px;
 }
-/* line 49, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/install.less */
+/* line 49, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\install.less */
 #install #aboutInstall #version #npmgitLinks {
   font-size: 25px;
   padding: 10px 0;
 }
-/* line 52, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/install.less */
+/* line 52, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\install.less */
 #install #aboutInstall #version #npmgitLinks #npmLink {
   padding-right: 20px;
 }
-/* line 55, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/install.less */
+/* line 55, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\install.less */
 #install #aboutInstall #version #npmgitLinks #npmLink img {
   max-width: 75px;
   max-height: 75px;
 }
-/* line 62, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/install.less */
+/* line 62, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\install.less */
 #install #aboutInstall #version #npmgitLinks #gitLink {
   padding-left: 20px;
 }
-/* line 65, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/install.less */
+/* line 65, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\install.less */
 #install #aboutInstall #version #npmgitLinks #gitLink img {
   max-width: 40px;
   max-height: 40px;
 }
-/* line 76, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/install.less */
+/* line 76, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\install.less */
 #install #aboutInstall #firstExample {
   padding-right: 20px;
   text-align: left;
   padding-left: 50px;
 }
-/* line 81, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/install.less */
+/* line 81, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\install.less */
 #install #aboutInstall #firstExample #firstCommands {
   padding: 20px;
   background: #000000;
   color: #ffffff;
   font-family: monospace, serif;
 }
-/* line 4, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/footer.less */
-#footer {
-  background-color: #283a44;
+/* line 2, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\footer.less */
+.footer {
+  background-color: #34495e;
+  width: 100%;
+  height: 75px;
+  float: right;
+  position: relative;
+  text-align: left;
 }
-/* line 12, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/footer.less */
-#footer #footerList li {
-  color: #ffffff;
-  font-size: 25px;
+/* line 11, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\footer.less */
+.footer ul {
+  list-style: none;
+  position: relative;
+  left: 35%;
 }
-/* line 16, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/footer.less */
-#footer #footerList li a {
-  color: #ffffff;
+/* line 16, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\footer.less */
+.footer ul li {
+  display: inline-block;
+  align-items: center;
+  padding: 17px;
 }
-/* line 19, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/footer.less */
-#footer #footerList li #facebook {
-  background-position: -320px -85px;
+/* line 21, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\footer.less */
+.footer ul li a img {
+  width: 35px;
+  height: 35px;
 }
-/* line 23, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/footer.less */
-#footer #footerList li .footerIcons {
-  display: block;
-  width: 25px;
-  height: 25px;
-  background-image: url('/css/images/sprite.png');
-  margin: 0 auto;
+/* line 11, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+.pair .featureHeader {
+  display: table;
+  width: 100%;
+  position: relative;
 }
-/* line 31, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/footer.less */
-#footer #footerList li #twitter {
-  background-position: -350px -85px;
+/* line 16, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+.pair .featureHeader .sideDiv {
+  float: right;
 }
-/* line 2, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/panel.less */
-#panel #catTitleBlock {
-  display: none;
+/* line 23, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+.sideDiv {
+  display: inline-block;
+  width: 49%;
+  border-bottom: 0px;
 }
-/* line 4, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/gettingstarted.less */
+/* line 28, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+.sideDiv img {
+  width: 65%;
+  padding-left: 35px;
+}
+/* line 34, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+.odd,
+.pair {
+  clear: both;
+}
+/* line 38, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+.odd {
+  background-color: #ffffff;
+}
+/* line 44, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+.pair {
+  background-color: #e5e5ee;
+}
+/* line 48, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+.pair .text {
+  float: right;
+}
+/* line 55, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+.like-h3 {
+  font-size: 4rem;
+  margin: 0;
+  border: 0px;
+  float: right;
+}
+/* line 65, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+.ctntFeature {
+  font-size: 4rem;
+  width: 200px;
+  background-color: #ffffff;
+}
+/* line 71, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+.ftrValue {
+  flex-grow: 1;
+  background-color: #7887AB;
+}
+/* line 78, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+p {
+  font-size: x-large;
+  line-height: 1.5em;
+  letter-spacing: -0.004em;
+}
+/* line 85, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+.contentWrapper {
+  display: flex;
+  widows: 100%;
+  height: 100%;
+  min-height: 100%;
+  max-width: 68rem;
+  text-align: left;
+  padding: 0 16px;
+  background-color: #2E4272;
+}
+/* line 4, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\gettingstarted.less */
 #gettingstarted {
   background-color: #5694d0;
   text-align: center;
 }
-/* line 8, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/gettingstarted.less */
+/* line 8, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\gettingstarted.less */
 #gettingstarted #videoContain {
   max-width: 800px;
   margin: 0 auto;
 }
-/* line 13, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/gettingstarted.less */
+/* line 13, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\gettingstarted.less */
 #gettingstarted #conferenceVideos {
   padding-top: 30px;
   display: table;
   width: 100%;
 }
-/* line 18, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/gettingstarted.less */
+/* line 18, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\gettingstarted.less */
 #gettingstarted #conferenceVideos .confVideo {
   display: table-cell;
 }
-/* line 23, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/gettingstarted.less */
+/* line 23, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\gettingstarted.less */
 #gettingstarted #conferenceVideos #gtacConf {
   padding-left: 20px;
 }
-/* line 27, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/pages/gettingstarted.less */
+/* line 27, c:\Program Files\nodejs\catjsnewsite\web\css\less\pages\gettingstarted.less */
 #gettingstarted #conferenceVideos #velocityConf {
   padding-right: 20px;
 }
 /* Navigation Links */
-/* line 2, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/desktop.less */
+/* line 2, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\desktop.less */
 nav {
   text-align: center;
 }
-/* line 4, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/desktop.less */
+/* line 4, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\desktop.less */
 nav #menu {
   opacity: 1;
 }
-/* line 8, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/desktop.less */
+/* line 8, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\desktop.less */
 nav #menu-options {
   display: none;
 }
-/* line 14, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/desktop.less */
+/* line 14, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\desktop.less */
 nav ul {
   display: inline-block;
 }
-/* line 18, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/desktop.less */
+/* line 18, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\desktop.less */
 nav ul li {
   float: left;
   -webkit-transition: background-color 0.4s ease-in-out;
@@ -251,7 +569,7 @@ nav ul li {
   width: 120px;
   top: 0px;
 }
-/* line 28, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/desktop.less */
+/* line 28, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\desktop.less */
 nav ul li a {
   -webkit-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
   -moz-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
@@ -267,7 +585,7 @@ nav ul li a {
   outline: 0;
   text-decoration: none;
 }
-/* line 43, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/desktop.less */
+/* line 43, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\desktop.less */
 nav ul li a.active {
   -webkit-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
   -moz-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
@@ -277,7 +595,7 @@ nav ul li a.active {
   font-weight: bold;
   top: 0;
 }
-/* line 54, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/desktop.less */
+/* line 54, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\desktop.less */
 nav ul li:hover,
 nav ul li.active {
   -webkit-transition: background-color 0.4s ease-in-out;
@@ -287,49 +605,55 @@ nav ul li.active {
   background-color: #000000;
 }
 @media only screen and (max-width: 720px), screen and (max-device-width: 480px) and (min-device-width: 320px) {
-  /* line 3, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 3, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   .containerBlock {
     width: 100% !important;
   }
-  /* line 11, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 11, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   .panelList li {
     width: 150px !important;
     display: inline-table !important;
   }
-  /* line 19, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 19, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   #catTitle {
     font-size: 35px !important;
   }
-  /* line 25, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 25, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   #panel .containerBlock {
     padding: 0 0 10px 0;
   }
-  /* line 29, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 29, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   #panel #catTitleBlock {
     display: block !important;
     text-align: center;
     margin-bottom: 5px;
   }
-  /* line 33, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 33, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   #panel #catTitleBlock #catIcon {
     width: 80px;
     height: auto;
     margin-right: 10px;
   }
-  /* line 39, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 39, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   #panel #catTitleBlock #catTitle {
     margin-left: 10px;
     vertical-align: middle;
   }
-  /* line 47, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 48, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
+  .headerbg .catlogo {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+  }
+  /* line 56, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   #main {
     padding: 0 15px;
   }
-  /* line 51, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 60, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   #main #catTitleIcon {
     display: none;
   }
-  /* line 68, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 77, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   #about #aboutContentWrapper #aboutCatList li {
     padding-top: 10px;
     display: list-item !important;
@@ -341,31 +665,31 @@ nav ul li.active {
     transform: translate(-50%, 0);
     left: 50%;
   }
-  /* line 85, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 94, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   #videoContain iframe {
     height: 330px !important;
     max-width: 90% !important;
   }
-  /* line 90, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 99, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   #videoContain .confVideo {
     display: block !important;
     padding: 0 !important;
   }
-  /* line 97, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 106, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   #install #aboutInstall {
     display: block !important;
   }
-  /* line 100, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 109, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   #install #aboutInstall .aboutInstallContent {
     display: block !important;
     width: auto !important;
     padding: 20px !important;
   }
-  /* line 110, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 119, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   nav {
     text-align: right;
   }
-  /* line 112, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 121, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   nav #menu-options {
     display: block;
     position: absolute;
@@ -383,29 +707,29 @@ nav ul li.active {
     font-weight: bold;
     color: #000000;
   }
-  /* line 131, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 140, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   nav #menu {
     display: inline-block;
     margin-top: 55px;
     opacity: 0.7;
   }
-  /* line 136, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 145, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   nav #menu .fold {
     opacity: 0;
   }
-  /* line 141, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 150, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   nav .opacity-off {
     opacity: 1 !important;
   }
-  /* line 144, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 153, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   nav .opacity-on {
     opacity: 0.7 !important;
   }
-  /* line 147, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 156, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   nav .opacity-full {
     opacity: 0 !important;
   }
-  /* line 153, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 162, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   nav ul {
     padding: 10px 0 10px 0 ;
     -webkit-border-radius: 0px 0px 0px 8px;
@@ -415,7 +739,7 @@ nav ul li.active {
     border-radius: 0px 0px 0px 8px;
     background-clip: padding-box;
   }
-  /* line 158, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 167, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   nav ul li {
     -webkit-transition: background-color 0.4s ease-in-out;
     -moz-transition: background-color 0.4s ease-in-out;
@@ -424,7 +748,7 @@ nav ul li.active {
     float: none;
     text-align: center;
   }
-  /* line 160, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 169, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   nav ul li a {
     -webkit-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
     -moz-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
@@ -437,7 +761,7 @@ nav ul li.active {
     text-decoration: none;
     outline: 0;
   }
-  /* line 171, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 180, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   nav ul li a.active {
     display: inline;
     -webkit-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
@@ -449,11 +773,11 @@ nav ul li.active {
     top: 0;
     font-weight: bold;
   }
-  /* line 186, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 195, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   nav ul li .fold {
     top: -100px;
   }
-  /* line 191, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/resolutions/devices.less */
+  /* line 200, c:\Program Files\nodejs\catjsnewsite\web\css\less\resolutions\devices.less */
   nav ul li:hover,
   nav ul li.active {
     -webkit-transition: background-color 0.4s ease-in-out;
@@ -463,12 +787,67 @@ nav ul li.active {
     background-color: #000000;
   }
 }
-/* line 13, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/app.less */
+/* line 6, c:\Program Files\nodejs\catjsnewsite\web\css\less\template\contact.less */
+#aboutMe {
+  background: #5694d0;
+}
+/* line 9, c:\Program Files\nodejs\catjsnewsite\web\css\less\template\contact.less */
+#aboutMe .socialBox {
+  margin-top: 32px;
+  width: 100%;
+  text-align: center;
+}
+/* line 14, c:\Program Files\nodejs\catjsnewsite\web\css\less\template\contact.less */
+#aboutMe .socialBox .socialBox li {
+  display: inline-block;
+  max-width: 15%;
+}
+/* line 15, c:\Program Files\nodejs\catjsnewsite\web\css\less\template\contact.less */
+#aboutMe .socialBox .socialBox a {
+  background: #95a5a6;
+  display: block;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+/* line 16, c:\Program Files\nodejs\catjsnewsite\web\css\less\template\contact.less */
+#aboutMe .socialBox #twitter:hover {
+  background-color: #00abec;
+}
+/* line 17, c:\Program Files\nodejs\catjsnewsite\web\css\less\template\contact.less */
+#aboutMe .socialBox #gplus:hover {
+  background-color: #d85534;
+}
+/* line 18, c:\Program Files\nodejs\catjsnewsite\web\css\less\template\contact.less */
+#aboutMe .socialBox #linkedIn:hover {
+  background-color: #0274b3;
+}
+/* line 19, c:\Program Files\nodejs\catjsnewsite\web\css\less\template\contact.less */
+#aboutMe .socialBox #github:hover {
+  background-color: #3b3b3b;
+}
+/* line 13, c:\Program Files\nodejs\catjsnewsite\web\css\less\app.less */
+p.thicker {
+  font-weight: 900;
+  font-size: 60px;
+  margin: 120px;
+  font-style: oblique;
+}
+/* line 21, c:\Program Files\nodejs\catjsnewsite\web\css\less\app.less */
+body {
+  background-image: url("../css/images/home-header.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/* line 30, c:\Program Files\nodejs\catjsnewsite\web\css\less\app.less */
+#templateWrapper {
+  position: relative;
+}
+/* line 35, c:\Program Files\nodejs\catjsnewsite\web\css\less\app.less */
 header {
   position: relative;
   top: 0px;
 }
-/* line 56, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/base.less */
+/* line 56, c:\Program Files\nodejs\catjsnewsite\web\css\less\base.less */
 section H1 {
   text-align: left;
   font-size: 52px;
@@ -476,21 +855,21 @@ section H1 {
   text-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
 }
 /* UL LI */
-/* line 24, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/app.less */
+/* line 47, c:\Program Files\nodejs\catjsnewsite\web\css\less\app.less */
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 /* Anchor */
-/* line 31, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/app.less */
+/* line 54, c:\Program Files\nodejs\catjsnewsite\web\css\less\app.less */
 a {
   color: #00A2CA;
   text-decoration: none;
   z-index: 1;
   position: relative;
 }
-/* line 38, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/app.less */
+/* line 63, c:\Program Files\nodejs\catjsnewsite\web\css\less\app.less */
 nav {
   display: none;
   background-color: #23242A;
@@ -500,39 +879,67 @@ nav {
   height: 55px;
   top: 0;
 }
-/* line 48, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/app.less */
+/* line 73, c:\Program Files\nodejs\catjsnewsite\web\css\less\app.less */
 nav ul {
   background-color: #23242A;
 }
-/* line 58, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/app.less */
+/* line 82, c:\Program Files\nodejs\catjsnewsite\web\css\less\app.less */
+.footerBar {
+  background-color: #101B27;
+}
+/* line 87, c:\Program Files\nodejs\catjsnewsite\web\css\less\app.less */
 .containerBlock {
-  width: 1100px;
   position: relative;
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
   left: 50%;
-  padding: 30px 0;
 }
-/* line 68, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/app.less */
+/* line 96, c:\Program Files\nodejs\catjsnewsite\web\css\less\app.less */
+.headerbg {
+  z-index: 10;
+  background-color: #34495e;
+  position: fixed;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  left: 50%;
+  width: 100%;
+  display: inline-block;
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.4);
+}
+/* line 112, c:\Program Files\nodejs\catjsnewsite\web\css\less\app.less */
+.catlogo {
+  width: 100px;
+  margin-top: 5px;
+  /*  height: 70px;
+        padding: initial;
+        padding-left : 15px;
+        padding-top : 15px;*/
+}
+/* line 122, c:\Program Files\nodejs\catjsnewsite\web\css\less\app.less */
 .blockTitle {
   font-size: 35px !important;
 }
-/* line 73, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/app.less */
+/* line 127, c:\Program Files\nodejs\catjsnewsite\web\css\less\app.less */
 .midTitle {
   font-size: 24px !important;
 }
-/* line 78, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/app.less */
+/* line 132, c:\Program Files\nodejs\catjsnewsite\web\css\less\app.less */
 .panelList {
   margin: 0;
-  padding: 0;
+  padding: 5px 30px 0 0;
   list-style-type: none;
-  text-align: center;
+  text-align: right;
 }
-/* line 85, /Users/ransnir/Documents/workspace/catjsnewsite/web/css/less/app.less */
+/* line 139, c:\Program Files\nodejs\catjsnewsite\web\css\less\app.less */
 .panelList li {
   font-size: 25px;
   display: inline-table;
-  list-style-type: none;
-  width: 180px;
+  list-style-type: square;
+  width: 160px;
+}
+/* line 146, c:\Program Files\nodejs\catjsnewsite\web\css\less\app.less */
+.panelList li a {
+  color: #FFFFFF;
 }

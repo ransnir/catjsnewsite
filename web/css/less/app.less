@@ -3,16 +3,39 @@
 @import "pages/about";
 @import "pages/install";
 @import "pages/footer";
-@import "pages/panel";
+@import "pages/features";
 @import "pages/gettingstarted";
 @import "resolutions/desktop";
 @import "resolutions/devices";
-@containerWidth : 1100px;
+@import "template/contact";
 
+
+p.thicker {
+  font-weight: 900;
+  font-size : 60px;
+  margin : 120px;
+  font-style: oblique;
+}
+
+
+body{
+
+  background-image: url("../css/images/home-header.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+
+
+#templateWrapper {
+
+  position: relative;
+}
 
 header {
   position: relative;
   top: 0px;
+
 }
 
 section {
@@ -35,6 +58,8 @@ a {
   position: relative;
 }
 
+
+
 nav {
   display: none;
   background-color: #23242A;
@@ -45,48 +70,84 @@ nav {
   height: 55px;
   top: 0;
 
-  ul {
-    background-color: #23242A;
-  }
+  ul  {
+        background-color: #23242A;
+      }
 
   #menu {
-
 //    .transition(all .8s ease-in-out);
-  }
+        }
+
+}
+.footerBar{
+  background-color: #101B27;
 }
 
+
 .containerBlock {
-  width: @containerWidth;
-  position: relative;
+    position: relative;
   -webkit-transform: translate(-50%,0);
   -ms-transform: translate(-50%,0);
           transform: translate(-50%,0);
   left: 50%;
-  padding : 30px 0;
-}
-
-.blockTitle {
-  font-size: 35px !important;
 
 }
 
-.midTitle {
-  font-size: 24px !important;
+      .headerbg{
+        z-index: 10;
+        background-color : #34495e;
+        position: fixed;
+        -webkit-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+        transform: translate(-50%,0);
+        left: 50%;
+        width: 100%;
+        //display : inline-table;
+        display: inline-block;
+        box-shadow:0 5px 9px 0 rgba(0,0,0,0.4);
 
-}
 
-.panelList {
+      }
 
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
+      .catlogo{
+        width: 100px;
+        margin-top : 5px;
+      /*  height: 70px;
+        padding: initial;
+        padding-left : 15px;
+        padding-top : 15px;*/
+      }
 
-    li{
-      font-size: 25px;
-      display: inline-table;
-      list-style-type: none;
-      width: 180px;
 
-    }
-  }
+      .blockTitle {
+        font-size: 35px !important;
+
+      }
+
+      .midTitle {
+        font-size: 24px !important;
+
+      }
+
+      .panelList {
+
+          margin: 0;
+          padding: 5px 30px 0 0;
+          list-style-type: none;
+          text-align: right;
+
+          li{
+
+            font-size: 25px;
+            display: inline-table;
+            list-style-type: square;
+            width: 160px;
+
+            a{
+
+              color: #FFFFFF;
+            }
+
+         }
+
+     }

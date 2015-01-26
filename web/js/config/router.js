@@ -17,6 +17,20 @@ define(['app'], function (app) {
                 controller  : 'appController'
             })
 
+
+            // route for the doc page
+            .when('/doc', {
+                templateUrl : 'templates/doc.html',
+                controller  : 'appController'
+            })
+
+//
+//            // route for the doc page
+//            .when('/contact', {
+//                templateUrl : 'templates/features.html',
+//                controller  : 'appcontact'
+//            })
+
             .when('/:id', {
             templateUrl: function(params){ 
                 return '/pages/' + params.id;   
