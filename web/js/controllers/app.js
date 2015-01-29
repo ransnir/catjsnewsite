@@ -8,7 +8,8 @@
 define(['app', 'common/manager', 'services/data', "directives/scrollto"], function (app, manager, appdata, scrolldirective) {
 
     // App controller creation
-    app.controller('appController', ['appData', '$scope', "$interval", function(appData, $scope, $interval) {
+    app.controller('appController', ['appData', '$scope', "$interval", "$http", "$location", "$stateParams",
+        function(appData, $scope, $interval, $http, $location, $stateParams) {
         var map;
 
 
@@ -28,9 +29,20 @@ define(['app', 'common/manager', 'services/data', "directives/scrollto"], functi
 
             }();
 
+            $scope.user;
+
             $scope.pages = data.all();
 
-
+            $scope.loginGoogle = function() {
+                debugger;
+                window.location = location.origin + '/auth/google';
+//                $location.path(location.origin + '/auth/google');
+//                $location.replace();
+//
+                $http.get('/user').success(function(data) {
+                    debugger;
+                });
+            }
             $scope.featurectnt = [
 
 

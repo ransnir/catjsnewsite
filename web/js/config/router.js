@@ -23,6 +23,11 @@ define(['app'], function (app) {
                 templateUrl : 'templates/doc.html',
                 controller  : 'appController'
             })
+            // route for the doc page
+            .when('/login', {
+                templateUrl : 'pages/fail.html',
+                controller  : 'appController'
+            })
 
 //
 //            // route for the doc page
