@@ -1,0 +1,40 @@
+
+<div >
+    <h1> See how it works !</h1>
+        <div class="divcontent"  style=" padding: 30px;">
+
+
+            <div class="divcontent">
+                <img src="/css/images/generic-10inch-tablet.png" class="iPadimg" style="z-index: -1">
+
+                <div style="display: inline-block;width: 45%;float: right;padding: 50px">
+                <pre width="30%">
+
+
+                        describe("A spec", function() {
+                        beforeEach(function() {
+                        this.foo = 0;
+                        });
+                        it("can use the `this` to share state", function() {
+                        expect(this.foo).toEqual(0);
+                        this.bar = "test pollution?";
+                        });
+
+                        it("prevents test pollution by having an empty
+                        `this` created for the next spec", function() {
+                        expect(this.foo).toEqual(0);
+                        expect(this.bar).toBe(undefined);
+                        });
+
+                 </pre>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+</div>

@@ -5,6 +5,8 @@
  * The main controller for the our app
  */
 
+
+
 define(['app', 'common/manager', 'services/data', "directives/scrollto"], function (app, manager, appdata, scrolldirective) {
 
     // App controller creation
@@ -46,8 +48,11 @@ define(['app', 'common/manager', 'services/data', "directives/scrollto"], functi
             $scope.featurectnt = [
 
 
-                {"name": "Continuous Integration & Delivery as a Service" ,
-                    "Value": "A simple push to your repository runs your automated tests and configured deployments on our powerful machines. From a simple deployment to Heroku to complex Deployment Pipelines for your large infrastructure, all can be set up with ease.",
+                {"name": "FOCOUS ON WHAT METEERS >>>" ,
+                    "Value":  "Devlopers don't test ! " + '&lt' + "br" + '&gt' +
+                        "  well there is some truth in that statment ," +
+                        "bad devlopers don't test ,great devlopers always test still testing end user experience is hard , " +
+                        "cat.js would like to simplify this issue .  " ,
                     "order": 0,
                     "img" : "https://d1089v03p3mzyq.cloudfront.net/assets/website/pages/home/home-continuousintegration-531efe9fe595d52b819fb660c6f54670.svg",
                     "bcg": "#f3f6fb"

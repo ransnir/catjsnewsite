@@ -12,7 +12,13 @@
         "type": "section",
         "active": false
     },
-
+    {
+        "name": "CATPage",
+        "display-name": "CATPage",
+        "template-url": "pages/catpage.html",
+        "type": "section",
+        "active": false
+    },
     {
         "name": "features",
         "display-name": "Features",
