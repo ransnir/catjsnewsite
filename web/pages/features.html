@@ -8,17 +8,27 @@ mixpanel.init("8228790c0d2d2cd0ae79d264250f2f7e");</script><!-- end Mixpanel -->
     <div ng-class="{odd: ($index % 2 !== 0), pair: ($index % 2 === 0)}"  >
 
         <div class="featureHeader">
-
-            <h2 class="sideDiv">{{feature.name}} </h2>
-
+            <h2 class="sideDiv" ng-bind-html="feature.name| to_trusted"></h2>
         </div>
+
     </div>
+
+<!--
+
+    <div ng-class="{odd: ($index % 2 !== 0), pair: ($index % 2 === 0)}" >
+        <p class="sideDiv text" ng-bind-html="feature.Value | to_trusted"></p>
+    </div>
+
+
+    <div class="sideDiv" >
+            <img src={{feature.img}}>
+    </div>-->
 
 
 
     <div ng-class="{odd: ($index % 2 !== 0), pair: ($index % 2 === 0)}" >
 
-        <p class="sideDiv text"> {{feature.Value}} </p>
+        <p class="sideDiv text" ng-bind-html="feature.Value | to_trusted"></p>
 
         <!--   <div class="sideDiv text" >
 
@@ -27,6 +37,7 @@ mixpanel.init("8228790c0d2d2cd0ae79d264250f2f7e");</script><!-- end Mixpanel -->
         <div class="sideDiv" ><img src={{feature.img}}   ></div>
 
     </div>
+
 
 </section>
 

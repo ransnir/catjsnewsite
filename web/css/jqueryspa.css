@@ -479,54 +479,55 @@ a.btn,
   display: inline-block;
   width: 49%;
   border-bottom: 0px;
+  padding-left: 15px;
 }
-/* line 28, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+/* line 29, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
 .sideDiv img {
-  width: 65%;
+  /*width: 65%;*/
   padding-left: 35px;
 }
-/* line 34, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+/* line 35, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
 .odd,
 .pair {
   clear: both;
 }
-/* line 38, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+/* line 39, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
 .odd {
   background-color: #ffffff;
 }
-/* line 44, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+/* line 45, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
 .pair {
   background-color: #e5e5ee;
 }
-/* line 48, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+/* line 49, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
 .pair .text {
   float: right;
 }
-/* line 55, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+/* line 56, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
 .like-h3 {
   font-size: 4rem;
   margin: 0;
   border: 0px;
   float: right;
 }
-/* line 66, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+/* line 67, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
 .ctntFeature {
   font-size: 4rem;
   width: 200px;
   background-color: #ffffff;
 }
-/* line 72, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+/* line 73, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
 .ftrValue {
   flex-grow: 1;
   background-color: #7887AB;
 }
-/* line 79, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+/* line 80, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
 p {
   font-size: x-large;
   line-height: 1.5em;
   letter-spacing: -0.004em;
 }
-/* line 86, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
+/* line 87, C:\Program Files\nodejs\catjsnewsite\web\css\less\pages\features.less */
 .contentWrapper {
   display: flex;
   widows: 100%;

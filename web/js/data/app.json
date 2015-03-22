@@ -21,6 +21,13 @@
         "active": false
     },
     {
+        "name": "install",
+        "display-name": "Install",
+        "template-url": "pages/install.html",
+        "type": "section",
+        "active": false
+    },
+    {
         "name": "footer",
         "display-name": "footer",
         "template-url": "pages/footer.html",
