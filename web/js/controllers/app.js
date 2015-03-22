@@ -9,6 +9,7 @@
 
 define(['app', 'common/manager', 'services/data', "directives/scrollto"], function (app, manager, appdata, scrolldirective) {
 
+<<<<<<< HEAD
 
 
 
@@ -25,6 +26,11 @@ define(['app', 'common/manager', 'services/data', "directives/scrollto"], functi
 
         // App controller creation
      app.controller('appController', ['appData', '$scope', "$interval", function(appData, $scope, $interval) {
+=======
+    // App controller creation
+    app.controller('appController', ['appData', '$scope', "$interval", "$http", "$location", "$stateParams",
+        function(appData, $scope, $interval, $http, $location, $stateParams) {
+>>>>>>> c4251bc5eda6b6c9db134481cd4b64d0b1f19530
         var map;
 
 
@@ -44,14 +50,28 @@ define(['app', 'common/manager', 'services/data', "directives/scrollto"], functi
 
             }();
 
+            $scope.user;
+
             $scope.pages = data.all();
 
-
+<<<<<<< HEAD
             //$scope.trustedHtml = $sce.trustAsHtml($scope.featurectnt);
 
 
 
 
+=======
+            $scope.loginGoogle = function() {
+                debugger;
+                window.location = location.origin + '/auth/google';
+//                $location.path(location.origin + '/auth/google');
+//                $location.replace();
+//
+                $http.get('/user').success(function(data) {
+                    debugger;
+                });
+            }
+>>>>>>> c4251bc5eda6b6c9db134481cd4b64d0b1f19530
             $scope.featurectnt = [
 
 
@@ -86,7 +106,10 @@ define(['app', 'common/manager', 'services/data', "directives/scrollto"], functi
 
                 },
                 {"name": "Some Goodies @@@",
-                        "Value": "We want to make sure you spent  less time on configuration / setup / capability , " +
+                        "Value": "We want " +
+                    "" +
+                    "" +
+                    "to make sure you spent  less time on configuration / setup / capability , " +
                         "so we build catjs in a way you can build your own plugins to assist in your day to day work " +
                         "you can already find some nice plugins such as taking a snapshot , retrieving device info and other "+
                         "Task Manager  , File system crawler with actions (Watch is supported) , Spawn an external process , etc )" +
